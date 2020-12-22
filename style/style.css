@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   min-width: 320px;
   overflow: hidden;
 }
@@ -71,7 +71,7 @@ body {
   width: 100%;
   top: 40px;
   left: 0;
-  max-height: 0px;
+  max-height: 0;
   font-size: 0;
   overflow: hidden;
   transition: 0.5s all;
@@ -109,10 +109,7 @@ body {
   background-color: transparent;
 }
 
-#check-menu:checked ~ .burger__label-item .burger__line::after {
-  top: 0;
-}
-
+#check-menu:checked ~ .burger__label-item .burger__line::after,
 #check-menu:checked ~ .burger__label-item .burger__line::before {
   top: 0;
 }
@@ -137,12 +134,12 @@ body {
 }
 
 .menu__img {
-  background: url("../image/header/down.svg") right no-repeat;
+  background: url("../image/navigation/down.svg") right no-repeat;
 }
 
 .menu__link {
   margin: 0 10px;
-  padding: 13px 10px 8px 10px;
+  padding: 13px 10px 8px;
   display: block;
   text-decoration: none;
   color: #bdc3c5;
@@ -187,7 +184,8 @@ body {
   display: none;
 }
 
-.menu__item:hover .menu__sub {
+.menu__item:hover .menu__sub,
+.menu__drop-down:hover .menu__sub-menu {
   display: block;
 }
 
@@ -198,10 +196,6 @@ body {
   left: 170px;
   top: 40px;
   display: none;
-}
-
-.menu__drop-down:hover .menu__sub-menu {
-  display: block;
 }
 
 .link__drop-down {
@@ -263,7 +257,6 @@ body {
 .footer__content-middle {
   padding-top: 40px;
   display: flex;
-
   justify-content: space-between;
   min-height: 125px;
 }
@@ -290,7 +283,6 @@ body {
 
 .footer__text {
   color: #c8d4dc;
-  font-family: Roboto;
   font-size: 13px;
   font-weight: 300;
   line-height: 18px;
@@ -354,19 +346,18 @@ body {
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-
   text-decoration-style: dotted;
 }
 
 .footer__middle-viber {
   padding: 2px 0px 2px 40px;
-  background: url("../image/icons/icon-viber.png") left no-repeat,
-    url("../image/icons/icon-phone.png") 17% no-repeat;
+  background: url("../image/footer/icons/icon-viber.png") left no-repeat,
+    url("../image/footer/icons/icon-phone.png") 17% no-repeat;
 }
 
 .footer__middle-skype {
   padding: 2px 0px 2px 20px;
-  background: url("../image/icons/icon-skype.png") left no-repeat;
+  background: url("../image/footer/icons/icon-skype.png") left no-repeat;
 }
 
 .footer__bottom-text {
