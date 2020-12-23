@@ -1,13 +1,14 @@
 body {
   font-family: Roboto, sans-serif;
   min-width: 320px;
-  overflow: hidden;
 }
 
 .container {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+/*Start navigation style*/
 
 .navigation {
   background-color: #040d0d;
@@ -210,7 +211,162 @@ body {
   background-color: #ccd3d4;
 }
 
-/*footer style----------------------------------------------------*/
+/*End navigation style*/
+
+/* Start menu__product style */
+
+.menu__product {
+  display: none;
+}
+
+.menu__product_body {
+  background: url("../image/other/Vector\ menu\ product.png") 99.5% 50%
+    no-repeat;
+  margin-top: 20px;
+  display: flex;
+  width: 1140px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #d94206;
+  padding-bottom: 5px;
+}
+
+.menu__product_item {
+  background-color: #ff5816;
+}
+
+.menu__product_link {
+  display: inline-block;
+  padding: 6px;
+  color: #ffffff;
+  height: 75%;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ff5816;
+  border-right: 1px solid #ffbca2;
+}
+
+.menu__product_link:hover {
+  background-color: #fd8c5f;
+}
+
+.menu__product_item-start {
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.menu__product_item-end {
+  margin-right: 20px;
+}
+
+.menu__product_link-end {
+  border: none;
+}
+
+/* End menu__product style */
+
+/* Start news style */
+
+.news {
+  padding: 30px 0px;
+}
+
+.news__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__left {
+  min-width: 220px;
+  display: none;
+}
+
+.news__title {
+  color: #2c3333;
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #bdc3c5;
+}
+
+.news__column {
+  max-height: 390px;
+  overflow: auto;
+}
+
+.news__item {
+  width: 230px;
+  padding: 15px 0;
+  border-bottom: 1px dotted #bdc3c5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__img {
+  border-radius: 5px;
+}
+
+.news__item_left {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.news__date {
+  margin-top: -20px;
+}
+
+.news__number {
+  display: inline-block;
+  color: #ff5816;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 6px 6px 2px 6px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.news__month,
+.news__item_text {
+  color: #040d0d;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.item_title {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: right;
+  color: #4673ab;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.item_title:hover {
+  text-decoration: underline;
+  color: #ff5816;
+}
+
+.news__all {
+  height: 13px;
+  color: #4673ab;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+/* End news style */
+
+/*Start footer style*/
 
 .footer__top {
   background-color: #5c7489;
@@ -269,8 +425,7 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 75px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 10px 0;
 }
 
 .footer__left__center-text,
@@ -368,22 +523,34 @@ body {
   font-size: 11px;
 }
 
-.footer__content-social_centr {
-  padding: 0 4px;
+.footer__content-social_center {
+  padding: 0 1px;
 }
 
 .footer__content-social {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
-/* media queries -------------------------------*/
+/*End footer style*/
+
+/* media queries */
 
 @media (min-width: 750px) {
   .container {
     width: 750px;
     padding: 0 15px;
   }
+
+  /* Start news style */
+  .news__left {
+    display: block;
+  }
+
+  /*End news style*/
+
+  /*Start footer style*/
 
   .footer__bottom-body {
     justify-content: space-between;
@@ -420,6 +587,7 @@ body {
     padding-left: 80px;
   }
 }
+/*End footer style*/
 
 @media (min-width: 980px) {
   .container {
@@ -427,8 +595,17 @@ body {
     padding: 0 10px;
   }
 
+  /* Start news style */
+  .news__left {
+    min-width: 265px;
+  }
+
+  /*End news style*/
+
+  /*Start footer style*/
+
   .footer__content-social {
-    padding-left: 160px;
+    padding-right: 45px;
   }
 
   .footer__middle-right__contact {
@@ -436,7 +613,20 @@ body {
   }
 }
 
+/*End footer style*/
+
 @media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+    padding: 0 10px;
+  }
+
+  .menu__product {
+    display: block;
+  }
+
+  /*Start footer style*/
+
   .footer__middle-right__idea,
   .menu {
     display: block;
@@ -447,8 +637,5 @@ body {
     display: none;
   }
 
-  .container {
-    width: 1140px;
-    padding: 0 10px;
-  }
+  /*End footer style*/
 }
