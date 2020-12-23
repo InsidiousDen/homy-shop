@@ -199,7 +199,7 @@ body {
 }
 
 .link__drop-down {
-  padding: 13px 10px 12px 10px;
+  padding: 13px 10px 12px;
   color: #040d0d;
   border-bottom: 1px solid #fff;
 }
@@ -236,22 +236,21 @@ body {
 }
 
 .footer__content-link {
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.footer__middle-right-link,
+.footer__content-link {
   color: #c8d4dc;
   font-size: 13px;
   font-weight: 300;
-  line-height: 30px;
   text-align: right;
-  text-decoration: none;
   cursor: pointer;
 }
 
 .footer__middle-right-link {
-  color: #c8d4dc;
-  font-size: 13px;
-  font-weight: 300;
   line-height: 25px;
-  text-align: right;
-  cursor: pointer;
 }
 
 .footer__content-middle {
