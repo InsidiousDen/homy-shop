@@ -48,6 +48,10 @@ body {
   border-bottom: 2px solid #bdc3c5;
 }
 
+.icon__center {
+  vertical-align: middle;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -578,6 +582,7 @@ a:visited {
   }
   .numbers__block {
     display: block;
+    margin-bottom: 40px;
   }
   .numbers__wrapper {
     display: flex;
@@ -700,6 +705,7 @@ a:visited {
   }
   .brands__all {
     display: block;
+    text-transform: initial;
   }
   .block__nav-arrow {
     display: none;
