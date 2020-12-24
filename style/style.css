@@ -230,15 +230,13 @@ body {
 }
 
 .menu__product_body {
-  background: url("../image/other/Vector\ menu\ product.png") 99.5% 50%
-    no-repeat;
   margin-top: 20px;
   display: flex;
   width: 1140px;
   height: 48px;
   border-radius: 10px;
   background-color: #d94206;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .menu__product_item {
@@ -249,7 +247,7 @@ body {
   display: inline-block;
   padding: 6px;
   color: #ffffff;
-  height: 75%;
+  height: 100%;
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -264,13 +262,21 @@ body {
   background-color: #fd8c5f;
 }
 
+.menu__product_item-arrow {
+  display: flex;
+  height: 48px;
+  padding-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu__product_item-start {
   padding-left: 10px;
   border-radius: 10px;
 }
 
 .menu__product_item-end {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .menu__product_link-end {
