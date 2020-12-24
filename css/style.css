@@ -285,7 +285,6 @@ a:visited {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 200px;
     background-image: url("../images/icons/logo-bg.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -644,18 +643,6 @@ a:visited {
   .header__bubble {
     position: relative;
     top: -15px;
-    left: 30px;
-    display: block;
-    border: 1px solid #DBDEE6;
-    border-radius: 20px;
-    width: 115px;
-    height: 60px;
-    padding-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 25px;
-    color: #4673AB;
-  }
 }
 
 @media screen and (min-width: 1140px) {
