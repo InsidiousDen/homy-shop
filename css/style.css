@@ -1407,7 +1407,7 @@ body {
   }
   .reasons__block {
     display: block;
-    margin-top: 55px;
+    margin-bottom: 55px;
   }
   .reasons__wrapper {
     display: flex;
