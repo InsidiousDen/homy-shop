@@ -1233,6 +1233,7 @@ body {
   }
   .banner__wrapper {
     display: block;
+    max-width: 850px;
   }
   .banner__small {
     display: block;
@@ -1630,7 +1631,7 @@ body {
   }
   .burger,
   .row__button,
-  .blue,
+  .vector,
   .footer__content-bottom__idea {
     display: none;
   }
